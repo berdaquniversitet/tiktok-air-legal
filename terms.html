@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service — TikTok Air</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --text: #0a0a0a;
+      --muted: #6b6b6b;
+      --border: #e5e5e5;
+      --accent: #25d4b0;
+      --accent-dark: #1aab8e;
+      --red: #fe2c55;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    header {
+      background: #0a0a0a;
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: #1a1a2e;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-mark svg { width: 22px; height: 22px; }
+
+    .logo-text {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span { color: #25d4b0; }
+
+    .hero {
+      background: #0a0a0a;
+      padding: 60px 40px 50px;
+      border-bottom: 1px solid #222;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #25d4b015;
+      border: 1px solid #25d4b040;
+      color: #25d4b0;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      color: #888;
+      font-size: 15px;
+    }
+
+    .hero p strong { color: #aaa; font-weight: 500; }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 40px 80px;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .toc-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      padding-left: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 32px;
+    }
+
+    .toc ol li { font-size: 14px; }
+
+    .toc ol li a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .toc ol li a:hover { text-decoration: underline; }
+
+    section {
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .section-num {
+      display: inline-block;
+      background: #0a0a0a;
+      color: #25d4b0;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+
+    p { margin-bottom: 14px; color: #333; font-size: 15px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    ul li, ol li {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .highlight-box {
+      background: #fff8e1;
+      border-left: 3px solid #f59e0b;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #78350f;
+    }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 20px;
+    }
+
+    .contact-card p { color: var(--muted); font-size: 14px; }
+    .contact-card a { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
+    .contact-card a:hover { text-decoration: underline; }
+
+    footer {
+      background: #0a0a0a;
+      padding: 32px 40px;
+      text-align: center;
+    }
+
+    footer p {
+      color: #555;
+      font-size: 13px;
+      margin: 0;
+    }
+
+    footer span { color: #25d4b0; }
+
+    @media (max-width: 600px) {
+      header { padding: 14px 20px; }
+      .hero { padding: 40px 20px 36px; }
+      .hero h1 { font-size: 28px; }
+      main { padding: 36px 20px 60px; }
+      .toc ol { grid-template-columns: 1fr; }
+      footer { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">
+    <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="9" cy="15" rx="5" ry="4" fill="#ffffff"/>
+      <rect x="13.5" y="4" width="2.5" height="12" rx="1.25" fill="#ffffff"/>
+      <path d="M16 4 Q22 3 21.5 9 Q18.5 8 16 9 Z" fill="#fe2c55"/>
+      <circle cx="16" cy="4" r="1.5" fill="#25d4b0"/>
+    </svg>
+  </div>
+  <div class="logo-text">TikTok<span>Air</span></div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Legal</div>
+    <h1>Terms of Service</h1>
+    <p>
+      <strong>Effective date: June 1, 2025</strong> &nbsp;·&nbsp;
+      Last updated: June 1, 2025
+    </p>
+  </div>
+</div>
+
+<main>
+
+  <div class="toc">
+    <div class="toc-title">Table of contents</div>
+    <ol>
+      <li><a href="#acceptance">Acceptance of terms</a></li>
+      <li><a href="#description">Service description</a></li>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#account">Account responsibilities</a></li>
+      <li><a href="#tiktok">TikTok API usage</a></li>
+      <li><a href="#prohibited">Prohibited uses</a></li>
+      <li><a href="#data">Data & privacy</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </div>
+
+  <section id="acceptance">
+    <div class="section-num">01</div>
+    <h2>Acceptance of terms</h2>
+    <p>By accessing or using TikTok Air ("the App", "Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the Service.</p>
+    <p>We reserve the right to update these Terms at any time. Continued use of the Service after changes constitutes acceptance of the revised Terms.</p>
+  </section>
+
+  <section id="description">
+    <div class="section-num">02</div>
+    <h2>Service description</h2>
+    <p>TikTok Air is an AI-powered comment moderation tool for TikTok content creators. The Service provides:</p>
+    <ul>
+      <li>Automated spam and toxic comment detection</li>
+      <li>Real-time comment filtering using machine learning</li>
+      <li>Custom filter rules and keyword blocking</li>
+      <li>Moderation logs and activity dashboard</li>
+    </ul>
+    <p>The Service connects to TikTok's platform via official TikTok APIs and operates in accordance with TikTok's Developer Terms of Service.</p>
+  </section>
+
+  <section id="eligibility">
+    <div class="section-num">03</div>
+    <h2>Eligibility</h2>
+    <p>To use TikTok Air, you must:</p>
+    <ul>
+      <li>Be at least 18 years old (or the legal age of majority in your jurisdiction)</li>
+      <li>Have a valid TikTok account in good standing</li>
+      <li>Agree to TikTok's own Terms of Service and Community Guidelines</li>
+      <li>Have the legal authority to enter into these Terms</li>
+    </ul>
+  </section>
+
+  <section id="account">
+    <div class="section-num">04</div>
+    <h2>Account responsibilities</h2>
+    <p>You are responsible for:</p>
+    <ul>
+      <li>Maintaining the confidentiality of your login credentials</li>
+      <li>All activity that occurs under your account</li>
+      <li>Notifying us immediately of any unauthorized access</li>
+      <li>Ensuring all information you provide is accurate and up to date</li>
+    </ul>
+    <div class="highlight-box">
+      Never share your TikTok access tokens or API credentials with any third party. TikTok Air staff will never ask for your password.
+    </div>
+  </section>
+
+  <section id="tiktok">
+    <div class="section-num">05</div>
+    <h2>TikTok API usage</h2>
+    <p>TikTok Air uses TikTok's official Login Kit and Content Posting API to access and manage comments on your behalf. By connecting your TikTok account, you authorize TikTok Air to:</p>
+    <ul>
+      <li>Read comments on your TikTok videos</li>
+      <li>Hide or delete comments identified as spam or toxic</li>
+      <li>Access basic profile information to identify your account</li>
+    </ul>
+    <p>You may revoke this access at any time through your TikTok account settings or within the App. TikTok Air does not store your TikTok password and operates strictly through OAuth 2.0 tokens.</p>
+  </section>
+
+  <section id="prohibited">
+    <div class="section-num">06</div>
+    <h2>Prohibited uses</h2>
+    <p>You agree not to use TikTok Air to:</p>
+    <ul>
+      <li>Violate any applicable laws or regulations</li>
+      <li>Delete or suppress legitimate user comments for anticompetitive purposes</li>
+      <li>Reverse engineer, scrape, or abuse the Service</li>
+      <li>Circumvent TikTok's own moderation policies</li>
+      <li>Use the Service for commercial resale without written permission</li>
+      <li>Attempt to access another user's account without authorization</li>
+    </ul>
+  </section>
+
+  <section id="data">
+    <div class="section-num">07</div>
+    <h2>Data & privacy</h2>
+    <p>Your privacy matters to us. TikTok Air collects only the minimum data required to provide the Service, including:</p>
+    <ul>
+      <li>TikTok account ID and display name</li>
+      <li>Comment text (processed in real-time for moderation)</li>
+      <li>Moderation logs (stored for up to 90 days)</li>
+      <li>Custom filter rules you define</li>
+    </ul>
+    <p>We do not sell your data to third parties. Comment content is processed by our AI models and is not used to train external models. For full details, please review our Privacy Policy.</p>
+  </section>
+
+  <section id="disclaimer">
+    <div class="section-num">08</div>
+    <h2>Disclaimer of warranties</h2>
+    <p>TikTok Air is provided "as is" without warranties of any kind. We do not guarantee that:</p>
+    <ul>
+      <li>The Service will be uninterrupted or error-free</li>
+      <li>All spam or toxic comments will be detected (AI models have inherent limitations)</li>
+      <li>The Service will remain available if TikTok changes or restricts its APIs</li>
+    </ul>
+    <p>TikTok Air is not affiliated with, endorsed by, or officially connected to TikTok or ByteDance Ltd.</p>
+  </section>
+
+  <section id="termination">
+    <div class="section-num">09</div>
+    <h2>Termination</h2>
+    <p>We reserve the right to suspend or terminate your access to TikTok Air at any time, with or without notice, if you violate these Terms or engage in activity that harms the Service or other users.</p>
+    <p>You may stop using the Service and disconnect your TikTok account at any time. Upon termination, your moderation logs and filter rules will be deleted within 30 days.</p>
+  </section>
+
+  <section id="contact">
+    <div class="section-num">10</div>
+    <h2>Contact us</h2>
+    <p>If you have questions about these Terms, please reach out:</p>
+    <div class="contact-card">
+      <p><strong>TikTok Air</strong></p>
+      <p>Email: <a href="mailto:legal@tiktokair.com">legal@tiktokair.com</a></p>
+      <p>Website: <a href="https://tiktokair.com">tiktokair.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 <span>TikTok Air</span>. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
